@@ -1,9 +1,14 @@
-import LoginPage from '@pages/login';
+import { DashboardPage } from '@pages/dashboard';
 import { RouteObject } from 'react-router';
+import LoginPage from '@pages/login';
 
 export default [
   {
     path: '/login',
     element: <LoginPage />,
+  },
+  {
+    path: '/',
+    element: <DashboardPage />,
   },
 ] as RouteObject[];
