@@ -40,20 +40,20 @@ export const Sidebar = ({
 	return (
 		<div
 			className={`flex flex-col w-full bg-black justify-between items-center gap-10 h-screen bg-white ${className}`}>
-			<div className='flex justify-start gap-2 items-center flex-col '>
-				<div className='py-3 relative flex justify-center items-center'>
-					<button
-						onClick={onToggle}
-						className='absolute py-1 rounded-lg left-16 bg-purple-300 flex justify-center items-center'>
-						<Icon
-							style={{
-								transform: "rotate(180deg)",
-							}}
-							icon='iconamoon:arrow-left-2-light'
-							width='30'
-							height='30'
-						/>
-					</button>
+			<div className='flex justify-start gap-2 items-center flex-col relative '>
+				<button
+					onClick={onToggle}
+					className='absolute py-1 rounded-lg left-0 bg-purple-300 flex justify-center items-center'>
+					<Icon
+						style={{
+							transform: "rotate(180deg)",
+						}}
+						icon='iconamoon:arrow-left-2-light'
+						width='30'
+						height='30'
+					/>
+				</button>
+				<div className='py-3  flex justify-center items-center'>
 					<img
 						className='w-14 h-14'
 						src='/images/Quixotic.png'
