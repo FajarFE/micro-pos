@@ -8,7 +8,8 @@ export default [
     element: <LoginPage />,
   },
   {
-    path: '/',
+    path: '/dashboard',
     element: <DashboardPage />,
+    children: [],
   },
 ] as RouteObject[];
