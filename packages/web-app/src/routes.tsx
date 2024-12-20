@@ -1,6 +1,7 @@
+import MainLayout from '@layouts/main/main.layout';
 import { DashboardPage } from '@pages/dashboard';
-import { RouteObject } from 'react-router';
 import LoginPage from '@pages/login';
+import { RouteObject } from 'react-router';
 
 export default [
   {
@@ -8,8 +9,13 @@ export default [
     element: <LoginPage />,
   },
   {
-    path: '/dashboard',
-    element: <DashboardPage />,
-    children: [],
+    path: '/',
+    element: <MainLayout />,
+    children: [
+      {
+        path: 'dashboard',
+        element: <DashboardPage />,
+      },
+    ],
   },
 ] as RouteObject[];
